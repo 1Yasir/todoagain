@@ -48,6 +48,8 @@
       flex: 1;
       padding: 8px;
       font-size: 16px;
+      border: 1px solid green;
+      border-radius: 5px;
     }
 
     button {
@@ -105,6 +107,14 @@
     .mark{
       text-decoration: line-through;
     }
+    
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5); /* Add a shadow on focus */
+  
+}
+
   </style>
 </head>
 <body>
@@ -113,7 +123,7 @@
       <h1>ToDo List</h1>
       <div class="todo">
         <div class="todo-main">
-          <input type="text" placeholder="add your task" id="input">
+          <input type="text" id="input" placeholder="add your task ">
           <button onclick="addtask()">Add Task</button>
         </div>
         <!-- task list container  -->
